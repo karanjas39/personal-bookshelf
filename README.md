@@ -57,7 +57,7 @@ The optimized build will be in the `build` folder.
     - `NavBar/`
   - `Styles/`
   - `main.jsx`
-- `index.js`
+- `index.html`
 - `.gitignore`
 - `package.json`
 - `README.md`
