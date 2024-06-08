@@ -1,0 +1,32 @@
+@import "./colors";
+
+.book {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  border: solid 1px $b;
+  border-radius: 10px;
+
+  > p {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    > span {
+      &:first-of-type {
+        font-weight: bold;
+      }
+    }
+  }
+
+  > button {
+    max-width: max-content;
+    padding: 5px 15px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: $sc;
+    color: $pc;
+  }
+}

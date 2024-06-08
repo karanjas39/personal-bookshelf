@@ -1,0 +1,51 @@
+@import "./colors";
+
+.home {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+
+  > p {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    > span {
+      color: $sc;
+    }
+  }
+
+  > div {
+    width: 50%;
+    position: relative;
+
+    > input {
+      width: 100%;
+      padding: 10px 15px;
+      border: none;
+      outline: none;
+      border-radius: 10px;
+      border: solid 1px $b;
+    }
+    > img {
+      position: absolute;
+      width: 30px;
+      top: 5px;
+      right: 10px;
+    }
+  }
+
+  > div:last-of-type {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: flex-start;
+    gap: 20px;
+  }
+}

@@ -10,14 +10,18 @@ import {
 } from "react-router-dom";
 
 import MainOutlet from "./Components/MainOutlet/MainOutlet.jsx";
-import MyBooks from "./Components/MyBooks/MyBooks.jsx";
+import MyBooks, { getBooksFromStorage } from "./Components/MyBooks/MyBooks.jsx";
 import Home from "./Components/Home/Home.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<MainOutlet />}>
       <Route path="" element={<Home />} />
-      <Route path="mybooks" element={<MyBooks />} />
+      <Route
+        path="mybooks"
+        element={<MyBooks />}
+        loader={getBooksFromStorage}
+      />
     </Route>
   )
 );

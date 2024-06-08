@@ -1,0 +1,31 @@
+@import "./colors";
+
+.mybooks {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+
+  > p {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    > span {
+      color: $sc;
+    }
+  }
+
+  > div {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: flex-start;
+    gap: 20px;
+  }
+}
