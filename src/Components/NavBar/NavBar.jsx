@@ -7,11 +7,9 @@ export default function NavBar() {
   return (
     <div className="navbar">
       <p>Bookworm</p>
-      <img
-        src="/public/menu.png"
-        alt="Menu Bar"
-        onClick={() => setOpen(true)}
-      />
+      <p className="menuBar" onClick={() => setOpen(true)}>
+        <i className="fa-solid fa-bars"></i>
+      </p>
       {open && <div className="blur" onClick={() => setOpen(false)}></div>}
       <div className={open ? "open" : ""}>
         <p onClick={() => setOpen(false)}>
