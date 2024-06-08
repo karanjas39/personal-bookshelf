@@ -63,9 +63,7 @@ export default function Home() {
           value={bookName}
           onChange={(e) => setBookName(e.target.value)}
         />
-        {isLoading && (
-          <img src="/public/loader.svg" alt="Loader" className="loader" />
-        )}
+        {isLoading && <img src="/loader.svg" alt="Loader" className="loader" />}
       </div>
 
       <div>

@@ -49,3 +49,19 @@
     gap: 20px;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .home {
+    width: 90%;
+    padding-top: 10px;
+
+    > div {
+      width: 80%;
+    }
+
+    > div:last-of-type {
+      grid-template-columns: 1fr;
+      margin-top: 10px;
+    }
+  }
+}

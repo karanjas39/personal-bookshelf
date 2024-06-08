@@ -29,3 +29,15 @@
     gap: 20px;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .mybooks {
+    width: 90%;
+    padding-top: 10px;
+
+    > div {
+      grid-template-columns: 1fr;
+      margin-top: 10px;
+    }
+  }
+}
